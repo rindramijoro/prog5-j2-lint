@@ -21,7 +21,7 @@ class Wallet {
         this.isOpen = false;
     }
 
-    addVola(amount: number): string {
+    addMoney(amount: number): string {
         if(!this.isLost){
             return "seems like you lost your wallet so you cannot add money";
         }
@@ -31,7 +31,7 @@ class Wallet {
         return `${amount} Ar added to your wallet`;
     }
 
-    getVola(amount: number): string {
+    getMoney(amount: number): string {
         if (!this.isLost) {
          return "seems like you lost your wallet so you cannot get money";
         }
@@ -44,7 +44,7 @@ class Wallet {
         return `${amount} Ar was retrieved from your wallet`;
     }
 
-    checkVola(): string {
+    checkMoney(): string {
         return `You have ${this.amount} Ar in your wallet`;
     }
 }
